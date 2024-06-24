@@ -4,7 +4,7 @@ from backend.core import run_llm
 import streamlit as st
 from streamlit_chat import message
 
-st.header("Chat Bot Content My Resume With Chat-Memory")
+st.header("Chat Bot Ask Questions about My Resume")
 
 
 prompt = st.text_input("Prompt", placeholder="Enter your prompt here..")
