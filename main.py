@@ -4,10 +4,15 @@ from backend.core import run_llm
 import streamlit as st
 from streamlit_chat import message
 
-st.header("Chat Bot Ask Questions about My Resume")
+st.header("Chat Bot Coded by William Kroll", divider='rainbow')
+# Making text bold
+st.markdown("**Framework: Python, LangChain, LangSmith, Pinecone(VectorDB)**")
+
+st.markdown("[William Kroll GitHub of this code](https://github.com/WillyEth/AIResumeHelper)")
 
 
-prompt = st.text_input("Prompt", placeholder="Enter your prompt here..")
+
+prompt = st.text_input("Prompt", placeholder="Enter your prompt here about my resume..")
 
 if "user_prompt_history" not in st.session_state:
     st.session_state["user_prompt_history"] = []
