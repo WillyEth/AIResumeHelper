@@ -40,6 +40,6 @@ def run_llm(query: str, chat_history: List[Dict[str, Any]] = []) -> Any:
 
 if __name__ == "__main__":
     chat_history = [
-        {"speaker": "user", "message": "William Kroll is cool"}
+        {"speaker": "user", "message": "is cool"}
     ]
-    print(run_llm(query="What is William Kroll phone number?"))
+    print(run_llm(query="What is ? phone number?"))
